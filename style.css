@@ -1,0 +1,50 @@
+* {
+  font-size: 120px;
+}
+
+body {
+  height: 100%;
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+#topArea {
+  width: 100%;
+  text-align: center;
+  border-width: 10px;
+  border-radius: 0 0 150px 150px;
+}
+
+#info-table {
+  background-color: whitesmoke;
+}
+
+#hide {
+  text-align: center;
+  font-size: 50px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+option, input, table, select {
+  width: 95%;
+  font-size: 140px;
+  text-align: center;
+  border: none;
+}
+
+table {
+  width: 100%;
+  margin-top: 75px;
+}
+
+button {
+  font-size: 200px;
+  padding: 25px 80px 25px 80px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: none;
+}

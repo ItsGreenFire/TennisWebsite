@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="topArea">
+    <label for="name-select">Choose Your Name<br></label>
+    <select name="name-select" id="name-select">
+        <option value="jordan">Jordan</option>
+        <option value="ethan">Ethan</option>
+        <option value="ronen">Ronen</option>
+    </select>
+    <br>
+    <label for="date-select">Choose a day<br></label>
+    <input type="date" name="date-select" id="date-select">
+    <br>
+    <label for="time-select">Choose a time<br></label>
+    <input type="time" name="time-select" id="time-select">
+    <button type="button" class="stripe" id="save-button" onclick="addEvent(geteventinfo())">Save</button>
+</div>
+<p id="hide" onclick="hide()">HIDE</p>
+
+<table id="info-table">
+    <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Name</th>
+    </tr>
+</table>
+
+
+</body>
+<script src="script.js"></script>
+</html>
