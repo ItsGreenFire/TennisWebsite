@@ -1,5 +1,5 @@
 <?php
 
-echo `sudo git pull`;
+echo `sudo git pull https://github.com/itsgreenfire/tenniswebsite`;
 
 ?>
