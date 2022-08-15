@@ -35,7 +35,8 @@ function addEvent(e) {
 }
 
 function add_to_table() {
-  infoTable.innerHTML = "    <tr>" +
+  infoTable.innerHTML =
+    "    <tr>" +
     "        <th>Date</th>" +
     "        <th>Time</th>" +
     "        <th>Name</th>" +
