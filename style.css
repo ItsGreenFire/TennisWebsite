@@ -11,8 +11,8 @@ body {
 #topArea {
   width: 100%;
   text-align: center;
-  border-width: 10px;
   border-radius: 0 0 150px 150px;
+  border: 10px solid black;
 }
 
 #info-table {
@@ -25,8 +25,15 @@ body {
   width: 150px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -12px;
   padding: 20px;
-  border-radius: 50px;
+  border-radius: 0 0 50px 50px;
+  border: 10px solid black;
+  border-top: 10px solid white;
+}
+
+.yy {
+  font-size: 500px;
 }
 
 option, input, table, select {
@@ -34,6 +41,11 @@ option, input, table, select {
   font-size: 140px;
   text-align: center;
   border: none;
+  margin-bottom: 60px;
+}
+
+select {
+  width: 83%;
 }
 
 table {
@@ -42,9 +54,11 @@ table {
 }
 
 button {
-  font-size: 200px;
-  padding: 25px 80px 25px 80px;
+  font-size: 180px;
+  padding: 5px 100px 5px 100px;
   text-align: center;
-  margin-bottom: 10px;
-  border: none;
+  margin-bottom: 80px;
+  background-color: lightgreen;
+  border: 5px lightgreen;
+  border-radius: 50px;
 }

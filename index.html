@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<div id="topArea">
+<div id="topArea" class="topArea">
     <select name="name-select" id="name-select">
         <option value="jordan">Jordan</option>
         <option value="ethan">Ethan</option>
         <option value="ronen">Ronen</option>
     </select>
+    <i style="font-size: 130px" class="material-icons">person</i>
     <br>
     <input type="date" name="date-select" id="date-select">
     <br>
     <input type="time" name="time-select" id="time-select">
-    <button type="button" class="stripe" id="save-button" onclick="addEvent(geteventinfo())">Save</button>
+    <button type="button" class="stripe" id="save-button" onclick="addEvent(geteventinfo())">Reserve</button>
 </div>
 <p id="hide" onclick="hide()">HIDE</p>
 

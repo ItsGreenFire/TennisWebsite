@@ -54,29 +54,50 @@ function add_to_table() {
   });
 }
 
+
 function hide() {
+  let topArea = document.getElementById('topArea')
+  let closeButton = document.getElementById('hide')
+
+  const openSlide = [
+    { transform: 'translateY(0)' },
+    { transform: 'translateY(-650px)' }];
+
+  const closeSlide = [
+    { transform: 'translateY(-550px)' },
+    { transform: 'translateY(0)' }];
+
+  const timing = {
+    duration: 350,
+    iterations: 1 };
+
   if (shown) {
     document.getElementById('hide').innerHTML = 'SHOW';
-    //document.getElementById('topArea').style.display = 'none';
-    document.getElementById('topArea').style.marginTop = '-1150px';
+    topArea.animate(openSlide, timing);
+    closeButton.animate(openSlide, timing);
+    setTimeout(function() {  topArea.style.marginTop = "-650px" }, 350);
+    document.getElementById('save-button').style.display = 'none'
+
   } else {
     document.getElementById('hide').innerHTML = 'HIDE';
-    //document.getElementById('topArea').style.display = 'block';
-    document.getElementById('topArea').style.marginTop = '0';
+    topArea.animate(closeSlide, timing);
+    closeButton.animate(closeSlide, timing);
+    setTimeout(function() {  topArea.style.marginTop = "0" }, 350);
+    document.getElementById('save-button').style.display = 'inline'
   }
   shown = !shown;
 }
 
 function randomColor() {
-  let colors = ['#ebd1ff', '#ffecd7', '#d4fffa', '#ffd1d1', '#C7FFC5', '#C6C9FF'];
-  random_color = colors[Math.floor(Math.random() * colors.length)];
+  let colors = ['#ffffff', '#ffde9d', '#c0ffc2'];
+  let random_color = colors[Math.floor(Math.random() * colors.length)];
+
   document.getElementById('topArea').style.backgroundColor = random_color;
-  document.getElementById('topArea').style.borderColor = random_color;
   document.getElementById('name-select').style.backgroundColor = random_color;
   document.getElementById('date-select').style.backgroundColor = random_color;
   document.getElementById('time-select').style.backgroundColor = random_color;
-  document.getElementById('save-button').style.backgroundColor = random_color;
   document.getElementById('hide').style.backgroundColor = random_color;
+  document.getElementById('hide').style.borderTopColor = random_color;
 }
 
 randomColor()
