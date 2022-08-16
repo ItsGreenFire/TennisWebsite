@@ -100,4 +100,4 @@ function randomColor() {
   document.getElementById('hide').style.borderTopColor = random_color;
 }
 
-randomColor()
+//randomColor()

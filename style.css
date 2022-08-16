@@ -1,20 +1,22 @@
-* {
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MuseoModerno:wght@100;200;300;400;500;900&display=swap');
 
 body {
   height: 100%;
   font-size: 120px;
-  background-color: whitesmoke;
+  background-color: #FF9B85;
   margin: 0;
   overflow-y: hidden;
 }
 
 option, input, select {
+  background-color: #60D394;
+  color: #FFD97D;
   width: 95%;
   font-size: 140px;
   text-align: center;
   border: none;
   margin-bottom: 60px;
+  font-family: 'MuseoModerno', cursive;
 }
 
 select {
@@ -22,31 +24,37 @@ select {
 }
 
 button {
+  background-color: #AAF683;
+  color: #EE6055;
   font-size: 180px;
   padding: 5px 100px 5px 100px;
   text-align: center;
   margin-bottom: 80px;
-  background-color: lightgreen;
   border: 5px lightgreen;
   border-radius: 50px;
+  font-family: 'MuseoModerno', cursive;
 }
 
 #topArea {
+  background-color: #60D394;
   width: 100%;
   text-align: center;
   border-radius: 0 0 150px 150px;
   border: 10px solid black;
+  font-family: 'MuseoModerno', cursive;
 }
 
 #info-table {
+  background-color: #FF9B85;
+  color: whitesmoke;
   text-align: center;
-  background-color: whitesmoke;
   width: 100%;
   margin-top: 75px;
   border: none;
   font-size: 80px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 7px;
 }
-
 #info-div {
   height: 1800px ;
   width: 90%;
@@ -56,6 +64,8 @@ button {
 }
 
 #hide {
+  background-color: #60D394;
+  color: whitesmoke;
   text-align: center;
   font-size: 50px;
   width: 150px;
@@ -65,5 +75,5 @@ button {
   padding: 20px;
   border-radius: 0 0 50px 50px;
   border: 10px solid black;
-  border-top: 10px solid white;
+  border-top: 10px solid #60D394;
 }
