@@ -1,31 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MuseoModerno:wght@100;200;300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@700&family=MuseoModerno:wght@100;200;300;400;500;900&display=swap');
 
 body {
   height: 100%;
   font-size: 120px;
-  background-color: #FF9B85;
-  margin: 0;
   overflow-y: hidden;
+  margin: 0;
 }
 
-option, input, select {
-  background-color: #60D394;
-  color: #FFD97D;
-  width: 95%;
+option, input, #name-select {
+  width: 99%;
   font-size: 140px;
   text-align: center;
   border: none;
   margin-bottom: 60px;
-  font-family: 'MuseoModerno', cursive;
-}
-
-select {
-  width: 83%;
+  font-family: 'Comfortaa', cursive;
 }
 
 button {
-  background-color: #AAF683;
-  color: #EE6055;
   font-size: 180px;
   padding: 5px 100px 5px 100px;
   text-align: center;
@@ -36,7 +27,6 @@ button {
 }
 
 #topArea {
-  background-color: #60D394;
   width: 100%;
   text-align: center;
   border-radius: 0 0 150px 150px;
@@ -44,27 +34,42 @@ button {
   font-family: 'MuseoModerno', cursive;
 }
 
+#name-select {
+  width: 81%;
+  font-size: 140px;
+}
+
+#minute-select {
+  width: 70%;
+  font-size: 140px;
+  text-align: center;
+  border: none;
+  margin-left: -10%;
+  margin-bottom: 60px;
+  font-family: 'Comfortaa', cursive;
+}
+
 #info-table {
-  background-color: #FF9B85;
   color: whitesmoke;
+  text-shadow: -1px -1px 10px #000, 1px -1px 10px #000, -1px 1px 10px #000, 1px 1px 10px #000;
   text-align: center;
   width: 100%;
   margin-top: 75px;
   border: none;
   font-size: 80px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'MuseoModerno', cursive;
   letter-spacing: 7px;
+  overflow-y: auto;
 }
+
 #info-div {
-  height: 1800px ;
-  width: 90%;
-  overflow: auto;
+  height: 200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 #hide {
-  background-color: #60D394;
   color: whitesmoke;
   text-align: center;
   font-size: 50px;
@@ -72,8 +77,14 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-top: -12px;
-  padding: 20px;
+  padding: 0 30px 0 30px;
   border-radius: 0 0 50px 50px;
   border: 10px solid black;
   border-top: 10px solid #60D394;
+}
+
+#open-close {
+  text-align: center;
+  font-size: 120px;
+  color: whitesmoke;
 }
