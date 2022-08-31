@@ -26,15 +26,14 @@
     <br>
     <label for="minute-select"></label>
     <select name="minute" id="minute-select">
-        <option value="0">0</option>
-        <option value="30">30</option>
-        <option value="60">60</option>
-        <option value="90">90</option>
-        <option value="120">120</option>
+        <option value="30">30 Mins</option>
+        <option value="60">60 Mins</option>
+        <option value="90">90 Mins</option>
+        <option value="120">120 Mins</option>
     </select>
     <span style="font-size: 140px; float: right; margin-right: 10px" class="material-symbols-rounded" >timelapse</span>
 
-    <button type="button" class="stripe" id="save-button" onclick="addEvent(geteventinfo())">Reserve</button>
+    <button type="button" id="save-button" onclick="addEvent(geteventinfo())">Reserve</button>
 </div>
 <div id="hide" onclick="hide()">
     <span class="material-symbols-outlined" id="open-close">arrow_circle_up</span>

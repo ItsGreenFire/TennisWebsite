@@ -3,7 +3,7 @@
 body {
   height: 100%;
   font-size: 120px;
-  overflow-y: hidden;
+  overflow-y: auto;
   margin: 0;
 }
 
@@ -24,6 +24,11 @@ button {
   border: 5px lightgreen;
   border-radius: 50px;
   font-family: 'MuseoModerno', cursive;
+  transition: .4s;
+}
+
+button:hover {
+  color: whitesmoke;
 }
 
 #topArea {
@@ -32,6 +37,7 @@ button {
   border-radius: 0 0 150px 150px;
   border: 10px solid black;
   font-family: 'MuseoModerno', cursive;
+  transition: 1.2s;
 }
 
 #name-select {
@@ -40,11 +46,11 @@ button {
 }
 
 #minute-select {
-  width: 70%;
+  width: 80%;
   font-size: 140px;
   text-align: center;
   border: none;
-  margin-left: -10%;
+  margin-left: -4%;
   margin-bottom: 60px;
   font-family: 'Comfortaa', cursive;
 }
@@ -57,7 +63,7 @@ button {
   margin-top: 75px;
   border: none;
   font-size: 80px;
-  font-family: 'MuseoModerno', cursive;
+  font-family: 'Bebas Neue', cursive;
   letter-spacing: 7px;
   overflow-y: auto;
 }
