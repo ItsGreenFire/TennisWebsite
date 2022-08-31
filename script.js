@@ -1,6 +1,5 @@
 let infoTable = document.getElementById("info-table");
 let shown = true;
-
 let date =  new Date();
 
 currentDate = date.getFullYear()+"-"+padzero(date.getMonth()+1)+"-"+padzero(date.getDate());
@@ -11,11 +10,35 @@ document.getElementById('time-select').value = currentTime;
 
 let events = [];
 
+function load_people() {
+  var Http = new XMLHttpRequest();
+  var url='https://jordan.lernerkids.com/tennis/db.php/list-people';
+
+  //Send the proper header information along with the request
+  Http.open("POST", url);
+  Http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  Http.send();
+
+  Http.onreadystatechange = function() {//Call a function when the state changes.
+    if(Http.readyState === 4 && Http.status === 200) {
+      var obj = JSON.parse(Http.responseText,true);
+      console.log(obj);
+      obj.people.forEach(p =>  {
+        let people_select = document.getElementById("name-select");
+        let option = document.createElement('option');
+        option.value = p.first;
+        option.innerHTML = p.first;
+        people_select.add(option);
+      });
+    }
+  }
+}
+
+load_people();
 
 function padzero(n) {
   return ("0"+n).slice(-2)
 }
-
 
 function geteventinfo() {
   let name = document.getElementById("name-select");
