@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@700&family=MuseoModerno:wght@100;200;300;400;500;900&display=swap');
+
+body {
+  height: 100%;
+  width: 100% ;
+  font-size: 120px;
+  overflow: hidden;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 150px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 30px;
+  margin: auto;
+}
+
+#topBar {
+  vertical-align: middle;
+  width: 100%;
+  height: 175px;
+  background-color: darkgoldenrod;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 0 0 70px 70px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  font-size: 20px;
+  color: white !important;
+  font-family: 'Comfortaa', cursive;
+}
+
+.dropdown-main {
+  font-size: 40px;
+  border-radius: 25px;
+  width: 170px;
+  padding: 20px;
+  background-color: #d6b543;
+  transition: .3s;
+  z-index: 0;
+  user-select: none;
+  color: white !important;
+  font-family: 'Comfortaa', cursive;
+}
+
+.dropdown-list {
+  border-radius: 0 20px 20px 20px;
+  padding: 20px 0 20px 0;
+  background-color: #d6b543;
+  list-style: none;
+  opacity: 0;
+  font-size: 35px;
+  transition: .4s;
+  z-index: -2;
+  width: 350px;
+  margin-top: 25px;
+  margin-left: -20px;
+  color: white !important;
+  font-family: 'Comfortaa', cursive;
+}
+
+.dropdown-list > *{
+  width: 280px;
+  padding: 5px;
+  border-radius: 0;
+  margin-left: 5px;
+  color: white !important;
+  font-family: 'Comfortaa', cursive;
+}
+
+.dropdown-list > *:hover {
+  background-color: #f0c639;
+}
+
+.dropdown-list > *:first-child {
+  border-radius: 0 15px 0 0;
+}
+
+.dropdown-list > *:last-child {
+  border-radius: 0 0 15px 15px;
+}
+
+.dropdown-button {
+  position: relative;
+  top: 7px;
+  font-size: 30px;
+}
+
+#toDesktop {
+  width: 100%;
+  background-color: whitesmoke;
+  color: darkslategray;
+  display: none;
+  margin-top: 0;
+  text-align: center;
+}
+
+#toDesktop > a {
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  color: darkslategray;
+  font-family: 'Bebas Neue', cursive;
+}
+
+#rcMenu {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  border-radius: 0 20px 20px 20px;
+  border-color: black;
+  padding: 10px;
+}
+
+#rcList {
+  font-size: 20%;
+  overflow-wrap: break-word;
+  list-style-type: none;
+  font-family: 'Comfortaa', cursive;
+}
+
+#rcList > li:hover {
+  background-color: lightgray;
+}
+
+#rcList > *{
+  margin-left: -40px;
+}
+
+#rcList > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.divider {
+  margin: 6px auto 6px auto;
+  height: 1px;
+  overflow: hidden;
+  background-color: darkgray;
+}
