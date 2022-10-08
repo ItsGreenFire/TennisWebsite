@@ -113,31 +113,19 @@ function onReserved(okayed) {
   if (!okayed) {
     modal.style.display = "block"
     confetti({
-      particleCount: 150,
+      particleCount: 200,
       spread: 100,
       origin: { y: 0.3 },
       scalar: 2
     });
     confetti({
-      particleCount: 150,
-      spread: 100,
-      origin: { y: 0.5 },
-      scalar: 2
-    });
-    confetti({
-      particleCount: 150,
+      particleCount: 200,
       spread: 100,
       origin: { y: 0.7 },
       scalar: 2
     });
     confetti({
-      particleCount: 150,
-      spread: 100,
-      origin: { y: 0.9 },
-      scalar: 2
-    });
-    confetti({
-      particleCount: 150,
+      particleCount: 200,
       spread: 100,
       origin: { y: 1.1 },
       scalar: 2
